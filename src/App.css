@@ -23,7 +23,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 450px;
+  width: 450px;
   padding: 2.5rem 3.125rem;
   background-color: whitesmoke;
   border-radius: 0.3rem;
@@ -139,15 +139,20 @@ body {
     font-size: 1.4rem;
   }
 
-  #quote-box {
-    width: 100%;
-  }
 }
+
 
 @media(max-width: 550px) {
   html {
     font-size: 14px;
   }
+}
+
+@media(max-width: 450px) {
+  #quote-box {
+    width: 100%;
+  }
+
 }
 
 @media(max-width: 350px) {
