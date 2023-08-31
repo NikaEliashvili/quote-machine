@@ -88,7 +88,7 @@ function App() {
             target="_blank"
             style={backColor}
             href={`
-            https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text="${quotes[0].quote}"  - ${quotes[0].author}`}
+            https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text="${quotes[0]?.quote}"  - ${quotes[0]?.author}`}
           >
             <FaTwitter />
           </a>
@@ -99,7 +99,7 @@ function App() {
             target="_blank"
             style={backColor}
             href={`
-            https://www.tumblr.com/widgets/share/tool?posttype=quote&tags=quotes&caption=${quotes[0].author}&content=${quotes[0].quote}&canonicalUrl=https%3A%2F%2Fwww.tumblr.com%2Fbuttons&shareSource=tumblr_share_button
+            https://www.tumblr.com/widgets/share/tool?posttype=quote&tags=quotes&caption=${quotes[0]?.author}&content=${quotes[0]?.quote}&canonicalUrl=https%3A%2F%2Fwww.tumblr.com%2Fbuttons&shareSource=tumblr_share_button
             `}
           >
             <FaTumblr />
